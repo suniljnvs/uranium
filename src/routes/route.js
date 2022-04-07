@@ -53,4 +53,6 @@ router.get('/hello', function(req, res) {
     res.send('hello my api!')
 
 });
-// adding this comment for no reason
+
+module.exports = router
+    // adding this comment for no reason
