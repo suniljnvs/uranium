@@ -59,6 +59,6 @@ router.get("/test-me", function(req, res) {
 })
 
 router.post("/createBook", BookController.createBook)
-router.get("/git", BookController.grtBookData)
+router.get("/getBookData", BookController.grtBookData)
 
 module.exports = router;
