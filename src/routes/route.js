@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 
 const router = express.Router();
 
@@ -46,5 +46,19 @@ router.post("/players", function(req, res) {
 
     res.send({ data: players, status: true });
 });
+
+module.exports = router; */
+
+const express = require("express");
+const router = express.Router();
+const BookModel = require("../models/bookModel")
+const BookController = require("../controllers/bookcontroller")
+
+router.get("/test-me", function(req, res) {
+    res.send("my first ever api!")
+})
+
+router.post("/createBook", BookController.createBook)
+router.get("/git", BookController.grtBookData)
 
 module.exports = router;
