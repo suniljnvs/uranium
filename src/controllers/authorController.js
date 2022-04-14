@@ -1,4 +1,4 @@
-const authorModel = require("../models/authorModel");
+const authorModel = require("console");
 const bookModel = require("../models/bookModel");
 
 
